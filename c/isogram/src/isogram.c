@@ -1,6 +1,5 @@
 #include <ctype.h>
 #include <string.h>
-#include <stdio.h>
 #include "isogram.h"
 
 /* returns -1 if c is not an alphabetic character */
@@ -27,8 +26,7 @@ is_isogram(const char phrase[])
     {
         const char c = phrase[i];
         int index = c_to_n(c);
-
-        if (isdigit(c) || ispunct(c) || isspace(c))
+        if (index == -1)
         {
             continue;
         }

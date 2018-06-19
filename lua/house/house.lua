@@ -31,9 +31,10 @@ end
 function house.recite()
     local str = ""
     for i, v in ipairs(verses) do
-        str = str .. house.verse(i) .. "\n"
+        str = str .. house.verse(i)
+        if i ~= #verses then str = str .. "\n" end
     end
-    return string.gsub(str, "\n$", "")
+    return str
 end
 
 return house

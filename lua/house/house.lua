@@ -16,7 +16,7 @@ local verses = {
 }
 
 local function combine(n)
-    thing, action = unpack(verses[n])
+    local thing, action = unpack(verses[n])
     if action == nil then
         return thing
     else
@@ -33,7 +33,6 @@ function house.recite()
     for i, v in ipairs(verses) do
         str = str .. house.verse(i) .. "\n"
     end
-
     return string.gsub(str, "\n$", "")
 end
 

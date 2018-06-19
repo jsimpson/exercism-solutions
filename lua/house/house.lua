@@ -15,7 +15,7 @@ local verses = {
     {"the horse and the hound and the horn", "belonged to"}
 }
 
-function combine(n)
+local function combine(n)
     thing, action = unpack(verses[n])
     if action == nil then
         return thing

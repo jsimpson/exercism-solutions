@@ -11,7 +11,7 @@ end
 function diff.sum_of_squares(n)
     total = 0
     for i=1, n do
-        total = total + (i^2)
+        total = total + i^2
     end
     return total
 end

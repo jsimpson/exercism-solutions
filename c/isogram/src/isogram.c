@@ -3,7 +3,8 @@
 #include "isogram.h"
 
 /* returns -1 if c is not an alphabetic character */
-int c_to_n(char c)
+int
+c_to_n(char c)
 {
     int n = -1;
     static const char * const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

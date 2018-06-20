@@ -8,6 +8,7 @@
 typedef struct word_count_word {
    char text[MAX_WORD_LENGTH + 1];      // allow for the string to be null-terminated
    int count;
+   word_count_word_t * next;
 } word_count_word_t;
 
 #define EXCESSIVE_LENGTH_WORD     -1

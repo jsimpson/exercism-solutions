@@ -1,11 +1,12 @@
 module BookKeeping
-  VERSION = 1
+  VERSION = 2
 end
 
 class Gigasecond
+  GIGASECOND = 10**9
   class << self
     def from(time)
-      time + 10**9
+      time + GIGASECOND
     end
   end
 end

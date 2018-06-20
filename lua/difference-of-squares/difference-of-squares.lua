@@ -1,7 +1,7 @@
 local diff = {}
 
 function diff.square_of_sums(n)
-    total = 0
+    local total = 0
     for i=1, n do
         total = total + i
     end
@@ -9,7 +9,7 @@ function diff.square_of_sums(n)
 end
 
 function diff.sum_of_squares(n)
-    total = 0
+    local total = 0
     for i=1, n do
         total = total + i^2
     end

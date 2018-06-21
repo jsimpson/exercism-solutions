@@ -1,5 +1,5 @@
 module BookKeeping
-  VERSION = 1
+  VERSION = 2
 end
 
 class Squares
@@ -8,11 +8,11 @@ class Squares
   end
 
   def square_of_sum
-    (1..@number).reduce(:+)**2
+    1.upto(@number).sum ** 2
   end
 
   def sum_of_squares
-    (1..@number).reduce { |sum, n| sum + n**2 }
+    1.upto(@number).sum { |n| n ** 2 }
   end
 
   def difference

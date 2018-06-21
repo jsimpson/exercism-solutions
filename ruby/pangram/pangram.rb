@@ -1,12 +1,11 @@
 module BookKeeping
-  VERSION = 1
+  VERSION = 2
 end
 
 class Pangram
   class << self
     def pangram?(phrase)
-      phrase.gsub!(/\d+|\W|\_/, '')
-      phrase.downcase.chars.uniq.count == 26
+      phrase.downcase.gsub(/[^[:alpha:]]/, '').chars.uniq.count == 26
     end
   end
 end

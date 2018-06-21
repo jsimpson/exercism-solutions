@@ -12,7 +12,7 @@ class Squares
   end
 
   def sum_of_squares
-    (1..@number).inject { |sum, n| sum + n**2 }
+    (1..@number).reduce { |sum, n| sum + n**2 }
   end
 
   def difference

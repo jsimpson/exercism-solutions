@@ -1,6 +1,3 @@
-require 'pry'
-require 'pry-byebug'
-
 module BookKeeping
   VERSION = 1
 end

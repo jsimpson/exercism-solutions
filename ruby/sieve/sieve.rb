@@ -11,9 +11,7 @@ class Sieve
     primes = [nil, nil, *2..@n] # 0 and 1 are not prime numbers
     (2..Math.sqrt(@n)).each do |i|
       (i**2..@n).step(i) do |j|
-        if primes[i]
-          primes[j] = nil
-        end
+        primes[j] = nil if primes[i]
       end
     end
     primes.compact

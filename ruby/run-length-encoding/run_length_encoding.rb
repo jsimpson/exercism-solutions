@@ -1,6 +1,3 @@
-require 'pry'
-require 'pry-byebug'
-
 class RunLengthEncoding
   class << self
     def encode(input)

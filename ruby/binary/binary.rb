@@ -1,6 +1,3 @@
-require 'pry'
-require 'pry-byebug'
-
 class Binary
   class << self
     def to_decimal(binary)
@@ -9,7 +6,7 @@ class Binary
       binary
         .chars
         .map(&:to_i)
-        .reduce { |acc, n| acc * 2 + n }
+        .reduce(0) { |acc, n| acc * 2 + n }
     end
   end
 end
